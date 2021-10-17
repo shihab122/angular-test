@@ -1,0 +1,21 @@
+<div>
+  <div class="container">
+    <app-add-movie (onAddMovie)="addMovie($event)">Add New</app-add-movie>
+  </div>
+  <div class="hot-table">
+    <hot-table
+      class="hot"
+      [data]="dataset"
+      [colWidths]="getColumnsWidth()"
+      [colHeaders]="getColumnsHeader()"
+      [columns]="getColumns()"
+      [rowHeaders]="true"
+      [manualColumnMove]="true"
+      [afterColumnMove]="columnMove"
+      [afterChange]="afterChange"
+      [manualColumnResize]="true"
+      [afterColumnResize]="afterColumnResize"
+      licenseKey="non-commercial-and-evaluation">
+    </hot-table>
+  </div>
+</div>
