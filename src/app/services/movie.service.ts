@@ -7,7 +7,7 @@ import {Movie} from '../models/Movie';
   providedIn: 'root',
 })
 export class MovieService {
-  private apiUrl = 'http://test-movies-api.vercel.app/api/movies';
+  private apiUrl = 'https://test-movies-api.vercel.app/api/movies';
 
   constructor(private http: HttpClient) {}
 
